@@ -1,101 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOFAS TURF | Premium Turf Booking</title>
+  <meta name="description" content="Premium turf booking platform with modern booking experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-
 <body>
-    <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnlogin-popup">Login</button>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-icon"><i class="fa-solid fa-futbol"></i></div>
+        <div class="brand-text">
+          <span class="brand-name">SOFAS TURF</span>
+          <small>Smart bookings</small>
+        </div>
+      </div>
 
-        </nav>
+      <nav class="main-nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#turfs">Turfs</a>
+        <a href="#booking">Bookings</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="ghost-btn" id="loginBtn">Login</button>
+      </div>
     </header>
-    <div class="wrapper">
-        <span class="icon-close">
-            <ion-icon name="close"></ion-icon>
-        </span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a>
-                    </p>
-                </div>
-            </form>
-        </div>
-        <div class="form-box register">
-            <span class="icon-close">
-                <ion-icon name="close"></ion-icon>
-            </span>
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">I Agree to the teams & conditions
-                    </label>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Alreay have an account?
-                        <a href="#" class="login-link">Login</a>
-                    </p>
-                </div>
-            </form>
-        </div>
-    </div>
-    <script src="./script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
 
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow">Live availability • Instant booking</span>
+          <h1>Book Your <span>Perfect Turf</span></h1>
+          <p>
+            Premium football, cricket, badminton and multi-sport grounds for your next match — fast, easy and fully managed.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-btn" id="exploreBtn">Explore Now</button>
+            <button class="secondary-btn">View Pricing</button>
+          </div>
+
+          <div class="mini-stats">
+            <div>
+              <strong>120+</strong>
+              <span>Turfs</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Rated</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="hero-panel">
+            <div class="panel-head">
+              <span>Tonight</span>
+              <span class="status-pill">Available</span>
+            </div>
+
+            <div class="pitch-grid">
+              <div class="pitch-box active">7:00 PM</div>
+              <div class="pitch-box active">8:00 PM</div>
+              <div class="pitch-box">9:00 PM</div>
+              <div class="pitch-box active">10:00 PM</div>
+            </div>
+
+            <div class="panel-footer">
+              <div>
+                <small>Starting from</small>
+                <strong>₹799/hr</strong>
+              </div>
+              <button class="mini-btn">Book now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section" id="booking">
+        <div class="search-panel">
+          <div class="field-box wide">
+            <label><i class="fa-solid fa-location-dot"></i> Location</label>
+            <input type="text" id="locationInput" placeholder="Search turf or city" />
+          </div>
+
+          <div class="field-box">
+            <label><i class="fa-regular fa-calendar"></i> Date</label>
+            <input type="date" id="dateInput" />
+          </div>
+
+          <div class="field-box">
+            <label><i class="fa-solid fa-futbol"></i> Sport</label>
+            <select id="sportFilter">
+              <option value="all">All Sports</option>
+              <option value="football">Football</option>
+              <option value="cricket">Cricket</option>
+              <option value="badminton">Badminton</option>
+              <option value="tennis">Tennis</option>
+            </select>
+          </div>
+
+          <button class="search-btn" id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+        </div>
+      </section>
+
+      <section class="cards-section" id="turfs">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow accent">Featured turfs</span>
+            <h2>Premium Grounds Nearby</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="turfGrid"></div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow accent">Customer love</span>
+            <h2>Why players choose SOFAS</h2>
+          </div>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“The turf quality is excellent and the booking was super smooth. Clean, well-lit, and easy to manage.”</p>
+            <strong>— Arjun, Football Player</strong>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“Best local booking experience. Fast confirmation, fair pricing, and easy slot selection.”</p>
+            <strong>— Priya, Badminton Club</strong>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“Modern UI and instant booking support. Great experience from start to finish.”</p>
+            <strong>— Karthik, Weekend League</strong>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <h3>SOFAS TURF</h3>
+          <p>Own the pitch. Own the game.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#turfs">Turfs</a></li>
+            <li><a href="#booking">Book</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@sofasturf.com</li>
+            <li>+91 98765 43210</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 SOFAS TURF. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="modal-header">
+        <div>
+          <p class="eyebrow accent">Booking details</p>
+          <h3 id="modalName">Premier Turf Arena</h3>
+        </div>
+        <div class="rating-line"><i class="fa-solid fa-star"></i> <span id="modalRating">4.9</span></div>
+      </div>
+
+      <div class="modal-body">
+        <div class="info-grid">
+          <div>
+            <span class="label">Location</span>
+            <strong id="modalLocation">City Center</strong>
+          </div>
+          <div>
+            <span class="label">Sport</span>
+            <strong id="modalSport">Football</strong>
+          </div>
+          <div>
+            <span class="label">Capacity</span>
+            <strong id="modalCapacity">11-a-side</strong>
+          </div>
+        </div>
+
+        <div class="field-stack">
+          <div class="field-box small-field">
+            <label>Date</label>
+            <input type="date" id="bookingDate" />
+          </div>
+
+          <div class="field-box small-field">
+            <label>Players</label>
+            <select id="playerCount">
+              <option value="5">5 Players</option>
+              <option value="7">7 Players</option>
+              <option value="11" selected>11 Players</option>
+            </select>
+          </div>
+
+          <div class="field-box small-field">
+            <label>Duration</label>
+            <select id="durationSelect">
+              <option value="1">1 Hour</option>
+              <option value="2" selected>2 Hours</option>
+              <option value="3">3 Hours</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="slot-area">
+          <label>Available slots</label>
+          <div class="slot-grid" id="slotGrid"></div>
+        </div>
+
+        <div class="pricing-box">
+          <div class="pricing-row">
+            <span>Base price</span>
+            <strong id="basePrice">₹1,600</strong>
+          </div>
+          <div class="pricing-row">
+            <span>Taxes</span>
+            <strong>₹160</strong>
+          </div>
+          <div class="pricing-row total-row">
+            <span>Total</span>
+            <strong id="totalPrice">₹1,760</strong>
+          </div>
+        </div>
+
+        <div class="booking-actions-row">
+          <button class="secondary-btn" id="cancelBooking">Cancel</button>
+          <button class="primary-btn" id="confirmBooking">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-modal" id="loginModal" aria-hidden="true">
+    <div class="modal-card small-modal">
+      <button class="modal-close" id="closeLogin" aria-label="Close login"><i class="fa-solid fa-xmark"></i></button>
+      <div class="login-header">
+        <p class="eyebrow accent">Welcome back</p>
+        <h3>Login to continue</h3>
+      </div>
+
+      <form class="login-form">
+        <div class="field-box login-field">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="field-box login-field">
+          <label>Password</label>
+          <input type="password" placeholder="Password" />
+        </div>
+
+        <div class="remember-row">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="primary-btn full-width">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Booking confirmed successfully.</div>
+
+  <script src="./script.js"></script>
+</body>
 </html>
